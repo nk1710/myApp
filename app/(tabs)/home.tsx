@@ -3,15 +3,15 @@ import { FlatList, Image, Text, TouchableOpacity, View } from "react-native";
 
 export default function Home() {
   // Stories data
-  const stories = Array.from({ length: 15 }, (_, i) => ({
+  const stories = Array.from({ length: 150 }, (_, i) => ({
     id: i.toString(),
     img: `https://picsum.photos/200?random=${i + 1}`,
   }));
 
   // Feed posts data
-  const posts = Array.from({ length: 20 }, (_, i) => ({
+  const posts = Array.from({ length: 200 }, (_, i) => ({
     id: i.toString(),
-    userImg: `https://picsum.photos/200?random=${i + 50}`,
+    userImg: `https://picsum.photos/200?random=${i + 100}`,
     postImg: `https://picsum.photos/600?random=${i + 100}`,
     username: `user_${i + 1}`,
     caption: `This is a sample caption for post number ${i + 1} ❤️🔥`,
@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <View style={{ flex: 1, backgroundColor: "white" }}>
       {/* ============================
-           Instagram Header
+           Pinstagram Header
       ============================ */}
       <View
         style={{
@@ -33,7 +33,7 @@ export default function Home() {
           borderColor: "#ddd",
         }}
       >
-        <Text style={{ fontSize: 26, fontWeight: "bold" }}>Instagram</Text>
+        <Text style={{ fontSize: 26, fontWeight: "bold" }}>Ninstagram</Text>
 
         <View style={{ flexDirection: "row", gap: 20 }}>
           <TouchableOpacity>

@@ -4,7 +4,7 @@ import { Dimensions, FlatList, Image, Text, TouchableOpacity, View } from "react
 const { height } = Dimensions.get("window");
 
 export default function Reels() {
-  const reels = Array.from({ length: 10 }, (_, i) => ({
+  const reels = Array.from({ length: 100 }, (_, i) => ({
     id: i.toString(),
     video: `https://picsum.photos/800?random=${i + 1}`,
     user: `user_${i + 1}`,

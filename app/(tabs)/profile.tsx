@@ -1,7 +1,7 @@
 import { FlatList, Image, Text, View } from "react-native";
 
 export default function Profile() {
-  const posts = Array.from({ length: 30 }, (_, i) => ({
+  const posts = Array.from({ length: 300 }, (_, i) => ({
     id: i.toString(),
     img: `https://picsum.photos/400?random=${i + 100}`,
   }));
@@ -35,7 +35,7 @@ export default function Profile() {
           </View>
 
           <View style={{ alignItems: "center" }}>
-            <Text style={{ fontSize: 20, fontWeight: "bold" }}>250</Text>
+            <Text style={{ fontSize: 20, fontWeight: "bold" }}>25000</Text>
             <Text>Followers</Text>
           </View>
 

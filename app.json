@@ -19,7 +19,8 @@
         "monochromeImage": "./assets/images/icon.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.nikhil.myapp"
     },
     "web": {
       "output": "static",
@@ -40,8 +41,12 @@
       ]
     ],
     "experiments": {
-      
       "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fc3e51b9-9683-4e74-8d7d-0ec86d90139e"
+      }
     }
   }
 }
